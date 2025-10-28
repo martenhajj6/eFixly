@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Johnson - Electrician | eFixly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">eFix<span>ly</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="professionals.html">Find Pros</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="#">How It Works</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="btn btn-outline">Log In</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Profile Header -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <img src="https://images.unsplash.com/photo-1581094794321-8410e6a536e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80" alt="Michael Johnson">
+                </div>
+                <div class="profile-info">
+                    <h1>Michael Johnson</h1>
+                    <p class="profile-specialty">Licensed Electrician</p>
+                    <div class="profile-location">
+                        <span>📍 Seattle, WA • 5 miles from you</span>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <div class="stat-value">4.9</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">127</div>
+                            <div class="stat-label">Reviews</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">8</div>
+                            <div class="stat-label">Years Exp</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">98%</div>
+                            <div class="stat-label">Response Rate</div>
+                        </div>
+                    </div>
+                    <div class="profile-actions">
+                        <a href="post-job.html" class="btn btn-primary">Request Quote</a>
+                        <button class="btn btn-outline">Message</button>
+                        <button class="btn btn-outline">Save to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab-headers">
+                    <div class="tab-header active" data-tab="about">About</div>
+                    <div class="tab-header" data-tab="services">Services</div>
+                    <div class="tab-header" data-tab="reviews">Reviews (127)</div>
+                    <div class="tab-header" data-tab="portfolio">Portfolio</div>
+                </div>
+                
+                <!-- About Tab -->
+                <div class="tab-content active" id="about">
+                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+                        <div>
+                            <h3>About Me</h3>
+                            <p>Hi, I'm Michael, a licensed electrician with over 8 years of experience serving the Seattle area. I specialize in residential electrical work, from simple repairs to full home rewiring.</p>
+                            <p>I take pride in delivering high-quality work with attention to detail and safety. My goal is to ensure your electrical systems are not only functional but also safe for you and your family.</p>
+                            
+                            <h3 style="margin-top: 2rem;">My Specialties</h3>
+                            <ul style="columns: 2; margin-top: 1rem;">
+                                <li>Electrical repairs</li>
+                                <li>Lighting installation</li>
+                                <li>Panel upgrades</li>
+                                <li>Outlet & switch installation</li>
+                                <li>Ceiling fan installation</li>
+                                <li>Home rewiring</li>
+                                <li>Surge protection</li>
+                                <li>Smart home integration</li>
+                            </ul>
+                            
+                            <h3 style="margin-top: 2rem;">Licenses & Certifications</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Washington State Electrical License #EL123456</li>
+                                <li>OSHA 30-Hour Safety Certified</li>
+                                <li>NFPA 70E Electrical Safety Certified</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <div class="filter-sidebar">
+                                <h3>Contact Michael</h3>
+                                <div style="text-align: center; margin-bottom: 1.5rem;">
+                                    <div class="pro-rating" style="justify-content: center; margin-bottom: 1rem;">
+                                        <div class="stars">★★★★★</div>
+                                        <span class="rating-value">4.9</span>
+                                        <span class="review-count">(127)</span>
+                                    </div>
+                                    <p style="color: var(--mutedText); font-size: 0.9rem;">Typically responds within 2 hours</p>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="service-needed">Service Needed</label>
+                                    <select id="service-needed" class="form-control">
+                                        <option>Select a service</option>
+                                        <option>Electrical repair</option>
+                                        <option>Lighting installation</option>
+                                        <option>Panel upgrade</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="project-desc">Project Description</label>
+                                    <textarea id="project-desc" class="form-control" placeholder="Briefly describe your project..."></textarea>
+                                </div>
+                                
+                                <button class="btn btn-primary" style="width: 100%;">Request Quote</button>
+                                <button class="btn btn-outline" style="width: 100%; margin-top: 0.5rem;">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Services Tab -->
+                <div class="tab-content" id="services">
+                    <h3>Services & Pricing</h3>
+                    <p>Below are my standard service rates. Final pricing may vary based on project complexity and materials required.</p>
+                    
+                    <div style="margin-top: 2rem;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                            <!-- Service 1 -->
+                            <div class="pro-card">
+                                <div class="pro-info">
+                                    <h3 class="pro-name">Electrical Repair</h3>
+                                    <p style="color: var(--mutedText); margin-bottom: 1rem;">Fixing faulty outlets, switches, and circuits</p>
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <span style="font-weight: 600; color: var(--accentBlue);">$75-150</span>
+                                        <span style="font-size: 0.9rem; color: var(--mutedText);">per hour</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Service 2 -->
+                            <div class="pro-card">
+                                <div class="pro-info">
+                                    <h3 class="pro-name">Lighting Installation</h3>
+                                    <p style="color: var(--mutedText); margin-bottom: 1rem;">Installing light fixtures, chandeliers, and recessed lighting</p>
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <span style="font-weight: 600; color: var(--accentBlue);">$100-200</span>
+                                        <span style="font-size: 0.9rem; color: var(--mutedText);">per fixture</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Service 3 -->
+                            <div class="pro-card">
+                                <div class="pro-info">
+                                    <h3 class="pro-name">Panel Upgrade</h3>
+                                    <p style="color: var(--mutedText); margin-bottom: 1rem;">Upgrading electrical service panel for increased capacity</p>
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <span style="font-weight: 600; color: var(--accentBlue);">$1,500-3,000</span>
+                                        <span style="font-size: 0.9rem; color: var(--mutedText);">flat rate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reviews Tab -->
+                <div class="tab-content" id="reviews">
+                    <h3>Customer Reviews</h3>
+                    <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+                        <div style="font-size: 3rem; font-weight: 700; margin-right: 1rem;">4.9</div>
+                        <div>
+                            <div class="stars" style="font-size: 1.2rem;">★★★★★</div>
+                            <p style="color: var(--mutedText);">Based on 127 reviews</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 1 -->
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80" alt="User">
+                                </div>
+                                <div>
+                                    <h4>Jennifer Martinez</h4>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                            <div class="review-date">2 weeks ago</div>
+                        </div>
+                        <div class="review-text">
+                            <p>Michael was fantastic! He fixed our faulty wiring quickly and explained everything in terms we could understand. His pricing was fair and he was very professional. Will definitely hire again for future electrical needs.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80" alt="User">
+                                </div>
+                                <div>
+                                    <h4>Robert Kim</h4>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                            <div class="review-date">1 month ago</div>
+                        </div>
+                        <div class="review-text">
+                            <p>Outstanding work on our kitchen lighting installation. Michael was punctual, clean, and efficient. He went above and beyond to ensure we were happy with the result. Highly recommend!</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 3 -->
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80" alt="User">
+                                </div>
+                                <div>
+                                    <h4>Amanda Thompson</h4>
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="review-date">2 months ago</div>
+                        </div>
+                        <div class="review-text">
+                            <p>Good experience overall. Michael installed several new outlets in our home office. The work was solid, though there was a slight delay in starting the project. Would use his services again.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-2">
+                        <button class="btn btn-outline">Load More Reviews</button>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Tab -->
+                <div class="tab-content" id="portfolio">
+                    <h3>Project Portfolio</h3>
+                    <p>Examples of my recent electrical work</p>
+                    
+                    <div class="professionals-grid" style="margin-top: 1.5rem;">
+                        <!-- Project 1 -->
+                        <div class="pro-card">
+                            <div class="pro-image">
+                                <img src="https://images.unsplash.com/photo-1581094794321-8410e6a536e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80" alt="Electrical Panel Upgrade">
+                            </div>
+                            <div class="pro-info">
+                                <h3 class="pro-name">Electrical Panel Upgrade</h3>
+                                <p style="color: var(--mutedText);">Upgraded 100A to 200A service panel for a growing family home</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2 -->
+                        <div class="pro-card">
+                            <div class="pro-image">
+                                <img src="https://images.unsplash.com/photo-1581093450333-2109870e0d39?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80" alt="Kitchen Lighting">
+                            </div>
+                            <div class="pro-info">
+                                <h3 class="pro-name">Kitchen Lighting Installation</h3>
+                                <p style="color: var(--mutedText);">Installed recessed lighting and pendant lights over island</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 3 -->
+                        <div class="pro-card">
+                            <div class="pro-image">
+                                <img src="https://images.unsplash.com/photo-1581093450101-83b64c8e1e3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80" alt="Outdoor Lighting">
+                            </div>
+                            <div class="pro-info">
+                                <h3 class="pro-name">Outdoor Lighting System</h3>
+                                <p style="color: var(--mutedText);">Designed and installed landscape lighting for backyard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>eFixly</h3>
+                    <p>Connecting clients with trusted service professionals for all home and business needs.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="professionals.html">Find Professionals</a></li>
+                        <li><a href="post-job.html">Post a Job</a></li>
+                        <li><a href="#">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="mailto:support@efixly.com"><i class="fas fa-envelope"></i> support@efixly.com</a></li>
+                        <li><a href="tel:+96103327134"><i class="fas fa-phone"></i> 03 327 134</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 eFixly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabHeaders = document.querySelectorAll('.tab-header');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    // Remove active class from all headers and contents
+                    tabHeaders.forEach(h => h.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked header and corresponding content
+                    header.classList.add('active');
+                    const tabId = header.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
