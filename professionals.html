@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Professionals - eFixly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">eFix<span>ly</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="professionals.html" class="active">Find Pros</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="#">How It Works</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="btn btn-outline">Log In</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="padding: 2rem 0; background-color: var(--lightGrey);">
+        <div class="container">
+            <h1>Find Service Professionals</h1>
+            <p>Browse our network of skilled professionals ready to help with your project</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 250px 1fr; gap: 2rem;">
+                <!-- Filters Sidebar -->
+                <div class="filter-sidebar">
+                    <div class="filter-group">
+                        <h3>Service Category</h3>
+                        <ul class="filter-options">
+                            <li>
+                                <label>
+                                    <input type="checkbox" checked> Electrical
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Plumbing
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> HVAC
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Carpentry
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Painting
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Moving
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Cleaning
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Rating</h3>
+                        <ul class="filter-options">
+                            <li>
+                                <label>
+                                    <input type="checkbox" checked> 4.5+ stars
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> 4.0+ stars
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> 3.5+ stars
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Location</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="ZIP code or city">
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Availability</h3>
+                        <ul class="filter-options">
+                            <li>
+                                <label>
+                                    <input type="checkbox" checked> Available this week
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Available today
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn btn-primary" style="width: 100%;">Apply Filters</button>
+                </div>
+                
+                <!-- Professionals Grid -->
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                        <h2>124 Professionals Available</h2>
+                        <div>
+                            <select class="form-control" style="width: auto; display: inline-block;">
+                                <option>Sort by: Recommended</option>
+                                <option>Sort by: Highest Rated</option>
+                                <option>Sort by: Most Reviews</option>
+                                <option>Sort by: Newest</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="professionals-grid">
+                        <!-- Pro 1 -->
+                        <div class="pro-card">
+                            <div class="pro-image">
+                                <img src="https://images.unsplash.com/photo-1581094794321-8410e6a536e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80" alt="Electrician">
+                            </div>
+                            <div class="pro-info">
+                                <h3 class="pro-name">Michael Johnson</h3>
+                                <p class="pro-specialty">Licensed Electrician</p>
+                                <div class="pro-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-value">4.9</span>
+                                    <span class="review-count">(127 reviews)</span>
+                                </div>
+                                <p class="pro-location" style="margin-bottom: 1rem; color: var(--mutedText);">📍 5 miles away</p>
+                                <a href="profile.html" class="btn btn-outline">View Profile</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Pro 2 -->
+                        <div class="pro-card">
+                            <div class="pro-image">
+                                <img src="https://images.unsplash.com/photo-1581093450333-2109870e0d39?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80" alt="Plumber">
+                            </div>
+                            <div class="pro-info">
+                                <h3 class="pro-name">Sarah Williams</h3>
+                                <p class="pro-specialty">Master Plumber</p>
+                                <div class="pro-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-value">4.8</span>
+                                    <span class="review-count">(94 reviews)</span>
+                                </div>
+                                <p class="pro-location" style="margin-bottom: 1rem; color: var(--mutedText);">📍 3 miles away</p>
+                                <a href="profile.html" class="btn btn-outline">View Profile</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Pro 3 -->
+                        <div class="pro-card">
+                            <div class="pro-image">
+                                <img src="https://images.unsplash.com/photo-1581093450101-83b64c8e1e3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80" alt="Handyman">
+                            </div>
+                            <div class="pro-info">
+                                <h3 class="pro-name">David Chen</h3>
+                                <p class="pro-specialty">General Handyman</p>
+                                <div class="pro-rating">
+                                    <div class="stars">★★★★☆</div>
+                                    <span class="rating-value">4.7</span>
+                                    <span class="review-count">(203 reviews)</span>
+                                </div>
+                                <p class="pro-location" style="margin-bottom: 1rem; color: var(--mutedText);">📍 7 miles away</p>
+                                <a href="profile.html" class="btn btn-outline">View Profile</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Pro 4 -->
+                        <div class="pro-card">
+                            <div class="pro-image">
+                                <img src="https://images.unsplash.com/photo-1581093450333-2109870e0d39?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80" alt="HVAC Technician">
+                            </div>
+                            <div class="pro-info">
+                                <h3 class="pro-name">Robert Kim</h3>
+                                <p class="pro-specialty">HVAC Technician</p>
+                                <div class="pro-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-value">4.9</span>
+                                    <span class="review-count">(86 reviews)</span>
+                                </div>
+                                <p class="pro-location" style="margin-bottom: 1rem; color: var(--mutedText);">📍 10 miles away</p>
+                                <a href="profile.html" class="btn btn-outline">View Profile</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Pro 5 -->
+                        <div class="pro-card">
+                            <div class="pro-image">
+                                <img src="https://images.unsplash.com/photo-1581094794321-8410e6a536e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80" alt="Painter">
+                            </div>
+                            <div class="pro-info">
+                                <h3 class="pro-name">James Wilson</h3>
+                                <p class="pro-specialty">Professional Painter</p>
+                                <div class="pro-rating">
+                                    <div class="stars">★★★★☆</div>
+                                    <span class="rating-value">4.6</span>
+                                    <span class="review-count">(142 reviews)</span>
+                                </div>
+                                <p class="pro-location" style="margin-bottom: 1rem; color: var(--mutedText);">📍 2 miles away</p>
+                                <a href="profile.html" class="btn btn-outline">View Profile</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Pro 6 -->
+                        <div class="pro-card">
+                            <div class="pro-image">
+                                <img src="https://images.unsplash.com/photo-1581093450101-83b64c8e1e3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80" alt="Mover">
+                            </div>
+                            <div class="pro-info">
+                                <h3 class="pro-name">Marcus Rodriguez</h3>
+                                <p class="pro-specialty">Moving Specialist</p>
+                                <div class="pro-rating">
+                                    <div class="stars">★★★★☆</div>
+                                    <span class="rating-value">4.5</span>
+                                    <span class="review-count">(78 reviews)</span>
+                                </div>
+                                <p class="pro-location" style="margin-bottom: 1rem; color: var(--mutedText);">📍 15 miles away</p>
+                                <a href="profile.html" class="btn btn-outline">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div style="display: flex; justify-content: center; margin-top: 3rem;">
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button class="btn btn-outline">Previous</button>
+                            <button class="btn btn-primary">1</button>
+                            <button class="btn btn-outline">2</button>
+                            <button class="btn btn-outline">3</button>
+                            <button class="btn btn-outline">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>eFixly</h3>
+                    <p>Connecting clients with trusted service professionals for all home and business needs.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="professionals.html">Find Professionals</a></li>
+                        <li><a href="post-job.html">Post a Job</a></li>
+                        <li><a href="#">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="mailto:support@efixly.com"><i class="fas fa-envelope"></i> support@efixly.com</a></li>
+                        <li><a href="tel:+96103327134"><i class="fas fa-phone"></i> 03 327 134</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 eFixly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality would go here
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Professionals page loaded');
+            // TODO: Implement filter logic
+        });
+    </script>
+</body>
+</html>
